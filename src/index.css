@@ -1,0 +1,104 @@
+/*-----Adam Demol 2022-----*/
+:root {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* { margin: 0px; padding: 0px; border: 0px; box-sizing: border-box; }
+*::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  color: white;
+  min-height: 100vh;
+  background: linear-gradient(rgb(138, 154, 172), rgb(55, 65, 77));
+}
+
+/*--header--*/
+h1 { text-align: center; }
+
+header {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+header svg {
+  width: 100px;
+}
+
+.weather-today {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.current-temp {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.weather-today-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+}
+
+.daily-info {
+  display: grid;
+  gap: 1rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px 20px 1px rgb(82, 94, 107);
+  padding: 1rem 2rem;
+  justify-items: center;
+  background-color: white;
+  color: rgb(82, 94, 107);
+}
+
+main {
+  display: grid;
+  gap: 3rem;
+}
+
+.weekly-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-self: center;
+}
+
+.weekly-info {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.weekly-info svg {
+  width: 50px;
+}
+
+.hourly-info {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  overflow-x: scroll;
+}
+
+.hourly-info svg {
+  width: 50px;
+}
+
+.hour-wrap {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
