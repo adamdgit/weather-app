@@ -101,7 +101,7 @@ export default function Weather() {
     <>
       <header>
         <div className="weather-today">
-          <h2>Today</h2>
+          <h2>Right now - {new Date().toLocaleString("en-AU", {weekday: 'long'})}</h2>
           {getWeatherCodeIcon(currentWeather?.weatherCode)}
           <span className="current-temp">{currentWeather?.currentTemp} &deg;</span>
         </div>
@@ -121,7 +121,7 @@ export default function Weather() {
         {
           dailyWeather?.map(day => {
             return <div key={day.timestamp} className="daily-info">
-              <span className="weekday">{new Date(day.timestamp).toLocaleString("en-AU", { weekday: 'long' })}</span>
+              <span className="weekday">{new Date(day.timestamp).toLocaleString("en-AU", { weekday: 'short', day: 'numeric' })}</span>
               {getWeatherCodeIcon(day.iconCode)}
               <span>Max: {day.maxTemp} &deg;</span>
             </div>
