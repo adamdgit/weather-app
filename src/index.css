@@ -57,10 +57,19 @@ header svg {
   gap: 1rem;
   border-radius: 10px;
   box-shadow: 7px 7px 20px 1px rgb(82, 94, 107);
-  padding: 1rem 2rem;
+  width: 150px;
+  height: 160px;
   justify-items: center;
   background-color: white;
   color: rgb(82, 94, 107);
+  margin-bottom: 2rem;
+}
+
+.weekday {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
 }
 
 main {
@@ -76,8 +85,10 @@ main {
 
 .weekly-info {
   display: flex;
-  gap: 1rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 0 2rem;
 }
 
 .weekly-info svg {
@@ -88,7 +99,7 @@ main {
   display: flex;
   gap: 1rem;
   padding: 0 1rem;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .hourly-info svg {
