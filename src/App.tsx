@@ -1,5 +1,4 @@
 
-import { useEffect, useState } from 'react'
 import Weather from './components/Weather'
 
 function App() {
@@ -7,7 +6,7 @@ function App() {
   return (
     <div className="App">
 
-      <h1>Weather Forecast</h1>
+      <h1>{new Date().toLocaleString("en-AU", {weekday: 'long', day: 'numeric', dayPeriod: 'short'})}</h1>
       <Weather />
 
     </div>
