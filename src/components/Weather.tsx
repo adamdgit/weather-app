@@ -101,7 +101,6 @@ export default function Weather() {
     <>
       <header>
         <div className="weather-today">
-          <h2>Right now - {new Date().toLocaleString("en-AU", {weekday: 'long'})}</h2>
           {getWeatherCodeIcon(currentWeather?.weatherCode)}
           <span className="current-temp">{currentWeather?.currentTemp} &deg;</span>
         </div>
