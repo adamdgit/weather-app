@@ -16,7 +16,7 @@ body {
 }
 
 /*--header--*/
-h1 { text-align: center; }
+h1, h2 { text-align: center; }
 
 header {
   display: flex;
@@ -84,9 +84,10 @@ main {
 }
 
 .weekly-info {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content:center;
+  gap: 1rem;
   overflow-x: auto;
   padding: 0 2rem;
 }
